@@ -27,14 +27,14 @@
         </div>
         <ul class="steps-list">
           <li
-              :class="{
+            :class="{
               active: activeIndex === idx,
               done: activeIndex >= idx
             }"
-              class="steps-item"
-              v-for="(step, idx) in steps"
-              :key="step.title"
-              @click="setActive(idx)"
+            class="steps-item"
+            v-for="(step, idx) in steps"
+            :key="step.title"
+            @click="setActive(idx)"
           >
             <span>{{ idx + 1 }}</span> {{ step.title }}
           </li>
@@ -42,8 +42,8 @@
         <div>
           <button
               class="btn"
-              @click="prev"
               :disabled="isFirstStep"
+              @click="prev"
           >{{ btnPrevText }}</button>
           <button
               class="btn primary"
