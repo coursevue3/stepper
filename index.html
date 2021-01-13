@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta
-        content="width=device-width, initial-scale=1.0"
-        name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
     />
     <title>Основы Vue</title>
     <link
-        href="theme.css"
-        rel="stylesheet"
+      href="theme.css"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -41,14 +41,14 @@
         </ul>
         <div>
           <button
-              class="btn"
-              :disabled="isFirstStep"
-              @click="prev"
+            class="btn"
+            :disabled="isFirstStep"
+            @click="prev"
           >{{ btnPrevText }}</button>
           <button
-              class="btn primary"
-              v-if="!startAgain"
-              @click="nextOfFinish"
+            class="btn primary"
+            v-if="!startAgain"
+            @click="nextOfFinish"
           >{{ btnNextText }}</button>
         </div>
       </div>
