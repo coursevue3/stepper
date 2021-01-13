@@ -71,16 +71,10 @@ const App = {
             return this.steps[this.activeIndex].text;
         },
         btnPrevText() {
-            if (this.startAgain) {
-                return 'Начать заного';
-            }
-            return 'Назад';
+            return this.startAgain ? 'Начать заного' : 'Назад';
         },
         btnNextText() {
-            if (this.isLastStep) {
-                return 'Закочнить';
-            }
-            return 'Вперед';
+            return this.isLastStep ? 'Закочнить' : 'Вперед';
         },
     },
 };
